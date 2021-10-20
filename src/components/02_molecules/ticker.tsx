@@ -38,12 +38,12 @@ interface IStyledTickerContainer {
   reverse: boolean;
 }
 
-const StyledTickerContainer = styled.p`
+const StyledTickerContainer = styled.p<IStyledTickerContainer>`
   display: flex;
   position: absolute;
   z-index: 0;
-  top: ${(p: IStyledTickerContainer) => p.topLocation}px;
-  ${(p: IStyledTickerContainer) => tickerScrolling(p.start, p.reverse)};
+  top: ${(p) => p.topLocation}px;
+  ${(p) => tickerScrolling(p.start, p.reverse)};
 `;
 
 const tickerString =
