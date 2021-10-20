@@ -84,6 +84,7 @@
     "react-idle-timer": "^4.2.3",
     "react-player": "^1.9.3",
     "react-swipe": "^6.0.4",
+    "sass": "^1.43.2",
     "sass-loader": "^8.0.0",
     "sinon": "^7.2.4",
     "style-loader": "^1.0.0",
